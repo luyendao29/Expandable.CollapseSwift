@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TitleTableViewCell2" rowHeight="36" id="KGk-i7-Jjw" customClass="TitleTableViewCell2" customModule="Expandable_CollapseSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AGv-Ks-ql8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tam_giac_ngang" translatesAutoresizingMaskIntoConstraints="NO" id="Quc-Pv-3NC">
+                                <rect key="frame" x="8" y="8" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="3kV-DD-pBT"/>
+                                    <constraint firstAttribute="width" secondItem="Quc-Pv-3NC" secondAttribute="height" multiplier="1:1" id="8DQ-Sb-opF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TableViewCell2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOL-Ro-vgt">
+                                <rect key="frame" x="24" y="8" width="296" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3489304781" green="0.50179654360000003" blue="0.69414138790000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Quc-Pv-3NC" firstAttribute="leading" secondItem="AGv-Ks-ql8" secondAttribute="leading" constant="8" id="8ex-M0-rNB"/>
+                            <constraint firstItem="UOL-Ro-vgt" firstAttribute="leading" secondItem="Quc-Pv-3NC" secondAttribute="trailing" id="EVQ-B1-cSc"/>
+                            <constraint firstAttribute="height" constant="35" id="Jnb-XW-xjf"/>
+                            <constraint firstAttribute="trailing" secondItem="UOL-Ro-vgt" secondAttribute="trailing" id="NXS-kK-OWp"/>
+                            <constraint firstItem="Quc-Pv-3NC" firstAttribute="top" secondItem="AGv-Ks-ql8" secondAttribute="top" constant="8" id="dAZ-Lx-riH"/>
+                            <constraint firstItem="UOL-Ro-vgt" firstAttribute="top" secondItem="AGv-Ks-ql8" secondAttribute="top" constant="8" id="z6U-c7-C6w"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUo-sV-7UC">
+                        <rect key="frame" x="0.0" y="36" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Pdu-Uw-Krm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="eUo-sV-7UC" secondAttribute="trailing" id="1ka-b4-Rmh"/>
+                    <constraint firstAttribute="trailing" secondItem="AGv-Ks-ql8" secondAttribute="trailing" id="AW9-tO-va9"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="eUo-sV-7UC" secondAttribute="bottom" constant="1" id="MRA-6l-DmG"/>
+                    <constraint firstItem="eUo-sV-7UC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Rwd-66-edp"/>
+                    <constraint firstItem="AGv-Ks-ql8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="UeW-eq-TTa"/>
+                    <constraint firstItem="AGv-Ks-ql8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ptu-4D-1a2"/>
+                    <constraint firstItem="eUo-sV-7UC" firstAttribute="top" secondItem="AGv-Ks-ql8" secondAttribute="bottom" constant="1" id="qk8-bY-JID"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="iconImageView" destination="Quc-Pv-3NC" id="vV8-Z6-0zz"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="135.26785714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tam_giac_ngang" width="12.5" height="12.5"/>
+    </resources>
+</document>
